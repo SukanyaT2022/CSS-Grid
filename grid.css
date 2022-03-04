@@ -1,0 +1,140 @@
+
+.grid-container{
+    background-color:  peru;
+    width: 100%;
+    height: auto;
+display: grid;
+grid-gap:10px;
+grid-template-columns:repeat(3,1fr) 200px;
+grid-template-rows: 80px 300px 400px 80px;
+font-family: 'Lora', serif; /*if we put google font in big or main box it will apply all of the page*/
+
+ 
+}
+.header{
+    background-color: #F0E0CE;
+    grid-column: 1/5;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.header a{
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: peru;
+}
+
+.box{
+    background-color: lightsalmon;
+ 
+}
+.box img{
+    height:100%;
+    width: 100%;
+}
+
+
+.nested-box{
+    grid-column: 1/4;
+
+}
+/* this one did not work  I break it to two box*/
+.two-box{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap:10px;
+
+}
+
+.picture img{
+    height: 400px;
+    width: 100%;
+  
+    background-color:pink;
+}
+
+
+.text{
+    height: 390px;
+    width: 98%;
+background-color: white;
+text-align: center;
+padding: 5px;
+}
+
+p{
+    text-align: justify;
+    padding: 20px;
+    margin-top: -10px;
+    
+}
+h2{
+    margin-bottom: -10px; /*move h2 next to p*/
+   
+
+}
+
+button{
+    padding: 10px 20px;/* use padding to increase size of button*/
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(65, 35, 5);
+    background-color: #61B852;
+    border-radius: 20px;
+    border: 5px double peru;
+/*margin-left: -300px; move order box from center to the left side*/
+}
+
+.side-bar{
+    background-color: #F7DB66;
+    grid-row: 2/4;
+    /*move expand box from left to right side*/
+    grid-column: 4/5;
+  
+}
+
+.social-icon{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+  
+}
+.fab{
+  font-size: 40px;
+  margin: 20px 0px;
+  
+}
+
+.fa-facebook{
+    color: blue;
+}
+.fa-twitter-square{
+    color: lightblue;
+}
+.fa-instagram{
+    color: orange;
+}
+.fa-pinterest-square{
+    color: red;
+}
+
+.footer{
+    background-color: #F0E0CE;
+   grid-column: 1/5;
+}
+.footer p{
+text-align: center; 
+color: peru;
+font-weight: bold;
+
+}
+
+
+
+

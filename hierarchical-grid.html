@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="hierarchical-grid.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <!--big hero-->
+        <div class="grid-item size1">
+            <h2>Education</h2>
+
+        </div>
+        <!--this is box2--calender-->
+        <div class="grid-item size2">
+            <table border="1px">
+                <!--we put border next to table so tables or frame is visible-->
+                <tr>
+                    <th colspan="7">February Schedules</th>
+                </tr>
+                <!--to put feb schedule cender we add colspan 
+    and put 7 becasue we make 7 box on each row below-->
+                <tr>
+                    <th> Sunday </th>
+                    <th> Monday </th>
+                    <th> Tuesday </th>
+                    <th> Wednesday </th>
+                    <th> Thursday </th>
+                    <th> Friday </th>
+                    <th> Saturday </th>
+
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td style="background-color:orange;">18 close</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+
+                <tr>
+                    <td>22</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td></td>
+                </tr>
+
+            </table>
+            <div class="span-box">
+                <div class="orange-box">18</div>
+                <p>Close</p>
+                <!--span use to make a snall box-->
+            </div>
+        </div>
+
+        <!--contact us box-->
+        <div class="grid-item size3">
+
+            <p>Contact Us</p>
+            <div class="group">
+                <form>
+                    <label>Name</label> <input type="text" placeholder="Your Name">
+                    <br>
+                    <label>Email</label> <input type="email" placeholder="Your email">
+                    <br>
+                    <label>Phone</label> <input type="tel" placeholder="Your Phone Number">
+                    <textarea name="Message" id="" cols="26" rows="4" placeholder="Message"></textarea>
+                    <!--if increase size of the box decreae rowa and cols-->
+                    <input type="submit">
+
+                </form>
+            </div>
+
+        </div>
+
+
+        <!--this is fill information box -->
+        <div class="grid-item size4">
+            <div class="group-form">
+                <form>
+                    <p>Fill information</p>
+
+                    <label for="Name">First name</label><br><input type="text" placeholder="First name">
+                    <br>
+
+                    <label for="Name">Middle name</label><br><input type="text" placeholder="Middle name">
+                    <br>
+                    <label for="Name">Last name</label><br><input type="text" placeholder="Last name">
+                    <br>
+                    <label for="Age">Age</label><br><input type="number" placeholder="Age">
+                    <br>
+
+                    <!--put <br> after </label> to move white box below text-->
+                    <input type="submit">
+
+                </form>
+            </div>
+
+
+        </div>
+        <div class="grid-item size5">
+            <div class="picture-box5">
+                <img
+                    src=" https://media.istockphoto.com/photos/children-doing-autumn-handcrafts-picture-id1168454133?b=1&k=20&m=1168454133&s=170667a&w=0&h=G9Uy-lshfbgeWrpY0twjIurf3GJBy0LLuqNs7hVIfco=">
+            </div>
+            <div class="text-box5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, officiis.</p>
+            </div>
+            <div class="picture-box5">
+                <img
+                    src="https://media.istockphoto.com/photos/two-boys-enjoying-kayaking-on-lake-picture-id1188850437?b=1&k=20&m=1188850437&s=170667a&w=0&h=hPGhIZDzIr-wUby6NyTmsIFgH_u9IXRhUK2-FkD6obQ=">
+            </div>
+
+            <div class="text-box5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, officiis.</p>
+            </div>
+
+        </div>
+
+        <!--this is tution and fee box-->
+        <div class="grid-item size6">
+            <h2>Tution and fee</h2>
+            <ol>
+                <li>Short Course $100</li>
+                <li>Season Course $300</li>
+                <li>Yearly Course $500</li>
+            </ol>
+
+        </div>
+
+
+        <!--about us-->
+        <div class="grid-item size7">
+            <h2>About Us</h2>
+            <div class="aboutus-picture">
+                <img
+                    src="https://images.pexels.com/photos/3661267/pexels-photo-3661267.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+            <div id="aboutus-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore alias ipsam quibusdam blanditiis
+                    excepturi ea error, at veritatis voluptates sapiente!</p>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

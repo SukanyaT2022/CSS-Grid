@@ -1,0 +1,155 @@
+.grid-container{
+   
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /*suggest to use fr is better*/
+    grid-template-rows:60px 600px 60px ;
+ grid-column-gap:5px ;
+    grid-row-gap:10px;
+    text-align: center;/*put all text in the middle*/
+    color: white;
+    
+}
+
+.header{
+    background-color: lightsalmon;
+    grid-column: 1/4; /*grid column make box fill all header area--count gap space 1 to 4*/
+    /* line-height: 50px; line hight work only text --to move text down*/
+
+}
+
+/*move travel to center*/
+.header h2{
+
+   color: brown;
+}
+
+
+.nav{
+    background-color: #E8AA9B;
+    padding-top: 50px;
+   
+     
+}
+ /* change nav home service contact to line up*/
+.nav a{
+display: block;
+text-decoration: none;
+padding: 40px 0px; /*first one top and bottom and second one left and right*/
+color: white;
+font-size: 20px;
+}
+
+.social-icon{/*social-icon is the box*/
+margin-top:30px ;
+
+}
+
+.fab{
+font-size: 30px;
+padding: 10px;
+
+}
+.fa-facebook{
+    color: blue;
+}
+
+.fa-twitter-square{
+    color: lightblue;
+}
+
+.fa-instagram{
+    color: black;
+}
+
+.fa-pinterest-square{
+    color: red;
+}
+
+
+
+.main h2{
+color: black;
+    
+}
+.sidebar{
+    background-color: mediumspringgreen;
+    /*make grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:10px;
+    
+   
+}
+.picture{ /*.picture only the box*/
+
+}
+
+.picture img{ /*contro only pics*/
+height: 120px;
+width: 120px;
+margin-top:20px;
+}
+
+#text-warning{ /*use# not . becasue we use id*/
+    color: red;
+    text-align:left; /*text line up to the left side equally*/
+    padding-right: 20px;
+    padding-top: 5px;
+ 
+    margin-left: -15px;
+   
+
+}
+.text{
+    color: black;
+    text-align: left;
+    padding-right: 20px;
+    padding-top: 7px;
+    margin-left: -15px;
+}
+
+
+
+
+
+
+
+
+.footer{
+    background-color: navy;
+    grid-column:1/4 ;
+   
+}
+
+.footer p{
+    padding-top:5px;
+
+}
+
+
+
+
+/* put 4 pics in grid*/
+.nested-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  grid-gap:20px;
+    height: auto;
+    width: 100%;
+}
+.small-box img{
+    height: auto;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
